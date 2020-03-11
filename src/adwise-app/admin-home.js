@@ -209,7 +209,7 @@ class AdminHome extends PolymerElement {
       slotFromTime: this.fromTime,
       slotToTime: this.toTime
     }
-    this.$.ajax._makeAjaxCall('post', `http://3.6.235.13:9090/adwise/users/${parseInt(sessionStorage.getItem('userId'))}/slot`, postObj, 'confirmSlot');
+    this.$.ajax._makeAjaxCall('post', `http://3.6.206.161:9090/adwise/users/${parseInt(sessionStorage.getItem('userId'))}/slot`, postObj, 'confirmSlot');
   }
   _bookSlot(event) {
     if (event.detail.data.statusCode === 'DCNC0005') {
